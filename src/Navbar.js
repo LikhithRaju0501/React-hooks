@@ -10,6 +10,9 @@ const Navbar = () => {
       <Link to={"/use-memo"} style={{ textDecoration: "none" }}>
         <h3>useMemo</h3>
       </Link>
+      <Link to={"/use-ref"} style={{ textDecoration: "none" }}>
+        <h3>useRef</h3>
+      </Link>
     </div>
   );
 };
