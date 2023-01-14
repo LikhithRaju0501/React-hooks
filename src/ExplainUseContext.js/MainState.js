@@ -1,15 +1,12 @@
-import React, { createContext, useState } from "react";
+import React from "react";
 import ChildState from "./ChildState";
-
-export const ThemeContext = createContext();
+import ThemeProvider from "./ThemeContext";
 
 const MainState = () => {
-  const [darkTheme, setDarkTheme] = useState(true);
   return (
-    <ThemeContext.Provider value={darkTheme}>
-      <button onClick={() => setDarkTheme(!darkTheme)}>Toggle Theme</button>
+    <ThemeProvider>
       <ChildState />
-    </ThemeContext.Provider>
+    </ThemeProvider>
   );
 };
 

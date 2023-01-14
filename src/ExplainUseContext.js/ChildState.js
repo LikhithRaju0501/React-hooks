@@ -1,13 +1,19 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "./MainState";
+import React from "react";
+import { useTheme, useThemeUpdate } from "./ThemeContext";
 
 const ChildState = () => {
-  const darkTheme = useContext(ThemeContext);
+  const darkTheme = useTheme();
+  const toggleTheme = useThemeUpdate();
   const themeStyle = {
     backgroundColor: darkTheme && "black",
     color: darkTheme && "white",
   };
-  return <div style={themeStyle}>ChildState</div>;
+  return (
+    <>
+      <button onClick={toggleTheme}>Toggle Theme</button>
+      <div style={themeStyle}>ChildState</div>
+    </>
+  );
 };
 
 export default ChildState;
