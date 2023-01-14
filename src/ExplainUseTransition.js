@@ -19,9 +19,9 @@ const ExplainUseTransition = () => {
   return (
     <div>
       <input type="text" value={input} onChange={handleChange} />
-      {list.map((item, index) => (
-        <div key={index}>{item}</div>
-      ))}
+      {isPending
+        ? "Loading....."
+        : list.map((item, index) => <div key={index}>{item}</div>)}
     </div>
   );
 };
