@@ -23,6 +23,7 @@ root.render(
       <Route path="/use-ref" element={<ExplainUseRef />} />
       <Route path="/use-context" element={<MainState />} />
       <Route path="/use-callback" element={<ExplainUseCallback />} />
+      <Route path="*" element={<App />} />
       {/* <Route path="/use-custom-hook" element={<ExplainUseCustomHooks />} /> */}
     </Routes>
   </BrowserRouter>
