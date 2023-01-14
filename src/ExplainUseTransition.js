@@ -9,6 +9,9 @@ const ExplainUseTransition = () => {
   const handleChange = (e) => {
     setInput(e.target.value);
 
+    // startTransition is used to set a priority of what task has
+    //  to be done first and what task can be done later
+
     startTransition(() => {
       const l = [];
       for (let i = 0; i < LIST_SIZE; i++) l.push(e.target.value);
