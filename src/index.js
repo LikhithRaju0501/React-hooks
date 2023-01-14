@@ -8,6 +8,7 @@ import Navbar from "./Navbar";
 import ExplainUseEffect from "./ExplainUseEffect";
 import ExplainUseMemo from "./ExplainUseMemo";
 import ExplainUseRef from "./ExplainUseRef";
+import MainState from "./ExplainUseContext.js/MainState";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,6 +19,7 @@ root.render(
       <Route path="/use-effect" element={<ExplainUseEffect />} />
       <Route path="/use-memo" element={<ExplainUseMemo />} />
       <Route path="/use-ref" element={<ExplainUseRef />} />
+      <Route path="/use-context" element={<MainState />} />
     </Routes>
   </BrowserRouter>
 );

@@ -13,6 +13,9 @@ const Navbar = () => {
       <Link to={"/use-ref"} style={{ textDecoration: "none" }}>
         <h3>useRef</h3>
       </Link>
+      <Link to={"/use-context"} style={{ textDecoration: "none" }}>
+        <h3>useContext</h3>
+      </Link>
     </div>
   );
 };
