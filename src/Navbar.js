@@ -7,6 +7,9 @@ const Navbar = () => {
       <Link to={"/use-effect"} style={{ textDecoration: "none" }}>
         <h3>useEffect</h3>
       </Link>
+      <Link to={"/use-memo"} style={{ textDecoration: "none" }}>
+        <h3>useMemo</h3>
+      </Link>
     </div>
   );
 };
