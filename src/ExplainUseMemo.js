@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 
 const ExplainUseMemo = () => {
   const [number, setNumber] = useState(0);
@@ -7,8 +7,19 @@ const ExplainUseMemo = () => {
     backgroundColor: dark && "black",
     color: dark && "white",
   };
+  const slowFunction = (number) => {
+    console.log("Calling slow number");
+    for (let i = 0; i <= 1000000000; i++) {}
+    return number * 2;
+  };
 
-  const doubleNumber = slowFunction(number);
+  // UseMemo won't be called until the dependency 'number'
+  //   changes so the changeTheme won't be
+  //   slow unlike when you change the value of number
+
+  const doubleNumber = useMemo(() => {
+    return slowFunction(number);
+  }, [number]);
 
   return (
     <div>
@@ -23,11 +34,5 @@ const ExplainUseMemo = () => {
     </div>
   );
 };
-
-function slowFunction(number) {
-  console.log("Calling slow number");
-  for (let i = 0; i <= 1000000000; i++) {}
-  return number * 2;
-}
 
 export default ExplainUseMemo;
