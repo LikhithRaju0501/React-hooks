@@ -10,6 +10,7 @@ import ExplainUseMemo from "./ExplainUseMemo";
 import ExplainUseRef from "./ExplainUseRef";
 import MainState from "./ExplainUseContext.js/MainState";
 import ExplainUseCallback from "./ExplainUseCallback/ExplainUseCallback";
+import ExplainUseTransition from "./ExplainUseTransition";
 // import ExplainUseCustomHooks from "./ExplainUseCustomHooks/ExplainUseCustomHooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -23,6 +24,7 @@ root.render(
       <Route path="/use-ref" element={<ExplainUseRef />} />
       <Route path="/use-context" element={<MainState />} />
       <Route path="/use-callback" element={<ExplainUseCallback />} />
+      <Route path="/use-transition" element={<ExplainUseTransition />} />
       <Route path="*" element={<App />} />
       {/* <Route path="/use-custom-hook" element={<ExplainUseCustomHooks />} /> */}
     </Routes>

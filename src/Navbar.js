@@ -19,6 +19,9 @@ const Navbar = () => {
       <Link to={"/use-callback"} style={{ textDecoration: "none" }}>
         <h3>useCallback</h3>
       </Link>{" "}
+      <Link to={"/use-transition"} style={{ textDecoration: "none" }}>
+        <h3>useTransition</h3>
+      </Link>{" "}
       {/* <Link to={"/use-custom-hook"} style={{ textDecoration: "none" }}>
         <h3>Custom Hooks</h3>
       </Link> */}
