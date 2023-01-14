@@ -9,6 +9,7 @@ import ExplainUseEffect from "./ExplainUseEffect";
 import ExplainUseMemo from "./ExplainUseMemo";
 import ExplainUseRef from "./ExplainUseRef";
 import MainState from "./ExplainUseContext.js/MainState";
+import ExplainUseCallback from "./ExplainUseCallback/ExplainUseCallback";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +21,7 @@ root.render(
       <Route path="/use-memo" element={<ExplainUseMemo />} />
       <Route path="/use-ref" element={<ExplainUseRef />} />
       <Route path="/use-context" element={<MainState />} />
+      <Route path="/use-callback" element={<ExplainUseCallback />} />
     </Routes>
   </BrowserRouter>
 );
