@@ -5,11 +5,30 @@ const ExplainUseState = () => {
     console.log("Re-render");
     return 0;
   });
+
+  const [state, setState] = useState({ counter: 0, theme: "blue" });
+  const decrement = () => {
+    setCount((prev) => prev - 1);
+    setState((prevState) => {
+      return { ...prevState, counter: state.counter - 1 };
+    });
+  };
+
+  const increment = () => {
+    setCount((prev) => prev + 1);
+    setState((prevState) => {
+      return { ...prevState, theme: "red" };
+    });
+  };
+
   return (
     <div>
-      <button onClick={() => setCount((prev) => prev + 1)}>+</button>
+      <button onClick={decrement}>+</button>
       <span>{count}</span>
-      <button onClick={() => setCount((prev) => prev - 1)}>-</button>
+      <span style={{ backgroundColor: state.theme }}>
+        Counter: {state.counter}
+      </span>
+      <button onClick={increment}>-</button>
     </div>
   );
 };
