@@ -25,6 +25,9 @@ const Navbar = () => {
       <Link to={"/use-deferred-value"} style={{ textDecoration: "none" }}>
         <h3>useDeferredValue</h3>
       </Link>{" "}
+      <Link to={"/use-state"} style={{ textDecoration: "none" }}>
+        <h3>useState</h3>
+      </Link>{" "}
       {/* <Link to={"/use-custom-hook"} style={{ textDecoration: "none" }}>
         <h3>Custom Hooks</h3>
       </Link> */}
