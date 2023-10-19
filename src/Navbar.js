@@ -16,6 +16,9 @@ const Navbar = () => {
       <Link to={"/use-context"} style={{ textDecoration: "none" }}>
         <h3>useContext</h3>
       </Link>
+      <Link to={"/use-context-practice"} style={{ textDecoration: "none" }}>
+        <h3>useContextPractice</h3>
+      </Link>
       <Link to={"/use-callback"} style={{ textDecoration: "none" }}>
         <h3>useCallback</h3>
       </Link>{" "}
@@ -28,6 +31,12 @@ const Navbar = () => {
       <Link to={"/use-state"} style={{ textDecoration: "none" }}>
         <h3>useState</h3>
       </Link>{" "}
+      <Link to={"/use-reducer-basic"} style={{ textDecoration: "none" }}>
+        <h3>useReducerBasic</h3>
+      </Link>
+      <Link to={"/use-reducer-complex"} style={{ textDecoration: "none" }}>
+        <h3>useReducerComplex</h3>
+      </Link>
       {/* <Link to={"/use-custom-hook"} style={{ textDecoration: "none" }}>
         <h3>Custom Hooks</h3>
       </Link> */}

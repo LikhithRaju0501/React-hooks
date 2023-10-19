@@ -3,10 +3,12 @@ import React, { useState, useMemo } from "react";
 const ExplainUseMemo = () => {
   const [number, setNumber] = useState(0);
   const [dark, setDark] = useState(false);
-  const theme = {
-    backgroundColor: dark && "black",
-    color: dark && "white",
-  };
+  const theme = useMemo(() => {
+    return {
+      backgroundColor: dark && "black",
+      color: dark && "white",
+    };
+  }, [dark]);
   const slowFunction = (number) => {
     console.log("Calling slow number");
     for (let i = 0; i <= 1000000000; i++) {}
