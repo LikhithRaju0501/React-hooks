@@ -16,6 +16,7 @@ import ExplainUseState from "./ExplainUseState";
 import PracticeUseContext from "./ExplainUseContext.js/Practice";
 import ExplainUseReducerBasic from "./ExplainUseReducer/ExplainUseReducerBasic";
 import ExplainUserReducerComplex from "./ExplainUseReducer/ExplainUserReducerComplex";
+import ExplainCreatePortal from "./ExplainCreatePortal";
 // import ExplainUseCustomHooks from "./ExplainUseCustomHooks/ExplainUseCustomHooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -38,6 +39,7 @@ root.render(
         path="/use-reducer-complex"
         element={<ExplainUserReducerComplex />}
       />
+      <Route path="/portal-modal" element={<ExplainCreatePortal />} />
       <Route path="*" element={<App />} />
       {/* <Route path="/use-custom-hook" element={<ExplainUseCustomHooks />} /> */}
     </Routes>

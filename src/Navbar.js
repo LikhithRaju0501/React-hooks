@@ -37,6 +37,9 @@ const Navbar = () => {
       <Link to={"/use-reducer-complex"} style={{ textDecoration: "none" }}>
         <h3>useReducerComplex</h3>
       </Link>
+      <Link to={"/portal-modal"} style={{ textDecoration: "none" }}>
+        <h3>Portal Modal</h3>
+      </Link>
       {/* <Link to={"/use-custom-hook"} style={{ textDecoration: "none" }}>
         <h3>Custom Hooks</h3>
       </Link> */}
